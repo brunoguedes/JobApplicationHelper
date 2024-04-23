@@ -7,19 +7,39 @@ import html2text
 
 from llms import LLMs
 from langchain.prompts import PromptTemplate
-from langchain.chains import LLMChain, SequentialChain 
+from langchain.chains import LLMChain 
 from langchain.memory import ConversationBufferMemory
 
 from langchain_community.document_loaders import AsyncChromiumLoader
 from langchain_community.document_transformers import Html2TextTransformer
 
+from io import StringIO
+from pdfminer.converter import TextConverter
+from pdfminer.layout import LAParams
+from pdfminer.pdfdocument import PDFDocument
+from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
+from pdfminer.pdfpage import PDFPage
+from pdfminer.pdfparser import PDFParser
+
 
 class App:
     def read_file_content(self, file_path):
         try:
-            with open(file_path, 'r') as file:
-                content = file.read()
-                return content
+            if file_path.endswith('.pdf'):
+                output_string = StringIO()
+                with open(file_path, 'rb') as file:
+                    parser = PDFParser(file)
+                    doc = PDFDocument(parser)
+                    rsrcmgr = PDFResourceManager()
+                    device = TextConverter(rsrcmgr, output_string, laparams=LAParams())
+                    interpreter = PDFPageInterpreter(rsrcmgr, device)
+                    for page in PDFPage.create_pages(doc):
+                        interpreter.process_page(page)
+                return output_string.getvalue()
+            else:
+                with open(file_path, 'r') as file:
+                    content = file.read()
+                    return content
         except FileNotFoundError:
             print(f"File not found: {file_path}")
             return None
@@ -36,9 +56,9 @@ class App:
         return content_text
 
     def run(self):
-        cv_path = './input/candidate_cv.txt'
+        cv_path = './input/candidate_cv.pdf'
         cv_content = self.read_file_content(cv_path)
-        cover_letter_path = './input/cover_letter_sample.txt'
+        cover_letter_path = './input/cover_letter_sample.pdf'
         cover_letter_sample = self.read_file_content(cover_letter_path)
 
         # App framework
