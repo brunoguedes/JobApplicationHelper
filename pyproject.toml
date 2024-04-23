@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "jobapplicationhelper"
+version = "0.1.0"
+description = ""
+authors = ["Bruno Guedes <bguedes@gmail.com>"]
+readme = "README.md"
+packages = [{include = "jobapplicationhelper", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+python-dotenv = "1.0.0"
+setuptools = "^69.2.0"
+decouple = "^0.0.7"
+openai = "^1.16.0"
+langchain = "^0.1.16"
+langchain-community = "^0.0.32"
+langchain-anthropic = "^0.1.8"
+playwright = "^1.43.0"
+html2text = "^2024.2.26"
+beautifulsoup4 = "^4.12.3"
+streamlit = "^1.33.0"
+langchain-openai = "^0.1.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

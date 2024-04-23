@@ -1,0 +1,26 @@
+Dear Hiring Team,
+My name is Bruno Guedes and I am writing to express my interest in working as ***POSITION NAME***.
+
+As you probably notice from my CV I really like technology and I'm passionate about software development. The languages that I'm most familiar with are Swift, Objective-C, javascript, python and C/C++. I've been teaching myself how to write software since I got my MSX when I was a kid.
+
+Throughout my career, I have developed a deep understanding of how to translate business needs into system requirements. As the Head of Front-End Development at audax.io, I have driven initiatives to increase team productivity and deliver reliable software. This has included automating manual processes with build pipelines, increasing code coverage, adopting feature flags, and migrating to a CMS. These experiences have honed my ability to analyze complex systems and develop solutions that meet business objectives.
+
+In my role as Mobile Lead at PaloIT, I successfully grew the native mobile development team from 0 to 15 developers through upskilling and hiring. I led projects for high-profile clients such as HSBC and the Singapore government, demonstrating my ability to manage projects, develop functional specifications, and deliver results. My strong communication skills have been essential in collaborating with cross-functional teams and stakeholders to launch innovative features. 
+
+As Tech Lead at Eggy, I was responsible for the entire tech stack and managed a team of 3 Software Engineers. I ensured high engineering standards were maintained while writing backend and frontend code. The tech stack used there was: Serverless Framework, MongoDB, AWS API Gateway, Lambda (Node.JS and Python), Cognito, DynamoDB, Textract (OCR), to name a few. This experience showcases my ability to work autonomously and lead a team to success.
+
+My technical expertise is complemented by my knowledge of the student lifecycle gained through my work in the Higher Education sector. As a mentor at Tech Ready Women Academy, I have guided female founders in understanding technologies suited for their business ideas, hiring developers, and defining MVPs and tech roadmaps. This experience has given me valuable insights into the unique challenges and opportunities in the education space.
+
+I've started developing iOS apps in July, 2010. My first project was a media player controller, to control a media player (playout) embedded in TVs used in Subaru dealerships. After 4 months doing that, I've joined Tigerspike where I had the opportunity to develop great apps, including several apps for broadcast/media companies like Channel Ten and News digital Media. I left Tigerspike to join Zunos (DigitalInc) again and develop an exiting new product called the ZunosApp, which is an app to improve performance of sales teams used by sales representatives from Apple and Telstra.
+
+After leaving Zunos I spent a couple of months working on a dating app called Fancied, I was able to build it from scratch and I believe I created a great foundation for it. The app didn't go too far, but with its base, the founder was able to build other products and now she created a company called “Tech Ready Women” to get women in tech. Recently the founder invited me to be one of the mentors in the program.
+In 2013, I joined Nine (Mi9) where I helped building the 9Now app. There, my code standards went to the next level, I started writing more unit tests, automated tests and I started learning reactive programming.
+
+After leaving Nine, I've joined Commonwealth Bank as a consultant. At that time, I was part of the Property App team. I left to go to UBank, but after a few months they invited me to come back to CBA. In CBA, I'm part of the fintech and partnerships team. We basically create experiments that run for a few months and we learn from them. We have a agile work environment and we use scrum with 2 weeks sprints, jira, etc.
+
+Before moving to Australia, I spent around 6 years working for Globo TV Network, which is Latin America's biggest broadcast company and the fourth largest in the world, as an engineer. At Globo TV I have developed software for multimedia systems which are used in the production and archiving of TV Shows such as: National News, Sports Coverage, Brazilian Big Brother. Those systems are made to run 24/7 and where responsible for switching from the old video-tape workflow into a tapeless one, where the audio/video are captured to computer files and transferred to a central storage, making it available to many users who can simultaneously access those files resulting in a huge improvement in the audio/video production speed. I also used a wide variety of tools, such as Codecs, Video Editors and audio tools. During this period, we used agile methodologies such as Scrum and XP. The system that we developed for the Globo News Channel was the winner of the "Broadcast Engineering Excellence Award 2007, Category Newsroom".
+
+Please do not hesitate to contact me if you need further information or recommendation letters. I look forward to hearing from you.
+
+Best Regards,
+Bruno Guedes

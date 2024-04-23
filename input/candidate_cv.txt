@@ -1,0 +1,120 @@
+## PROFESSIONAL EXPERIENCE
+
+Head Of Front-End Development (Web and Mobile) at audax.io (formally Nexus @ Standard Chartered Bank) (Since Jul 2022)
+======================================================================================================================
+At Audax, I've helped to drive the web and mobile teams. My main focus is to increase team productivity and help the team delivering simple and reliable software. So far, my main areas of impacts were:
+- Automate manual process with a build pipeline
+- Increase code coverage
+- Adopt local and remote feature flags
+- Migrate local copy to use a CMS
+
+Mentor at Tech Ready Women Academy (Since Oct 2017)
+===================================================
+Tech Ready Women Academy's mission is to provide women with tech and business education. Inspiring, empowering and preparing non-tech females for their tech journey so they have the skills and know-how to create tech businesses and innovative products. I've been mentoring many female founders, helping them with:
+- Understanding which technologies are more suited for their business idea
+- Hiring developers
+- Defining MVP and tech roadmap
+
+Mobile Lead at PaloIT (Jun 2020 - Jul 2022)
+===========================================
+PaloIT didn't have a native mobile development team, so they brought me in to help skilling up their ReactNative developers. I helped them growing the team from 0 to 15 native developers by skilling up and hiring. We've worked on projects such as HSBC banking app and an app for the Singapore government housing department to allow users to register their cars and pay for parking at the public car parks around the country.
+
+Tech Lead at Eggy - Part-time Contractor (Jan 2019 - Mar 2020), Full-time Contractor (Mar 2020 - Jun 2020)
+==========================================================================================================
+Eggy is building a product to help people to organize their life admin.
+I've lead a team of 3 Software Engineers. I was responsible for the whole tech stack, for keeping engineering standards high and for writing backend (node.js/python) and frontend code (Swift/very little React.js). We used the Serverless framework to deploy to AWS (API Gateway, Cognito, Lambda, DynamoDB, S3, SNS), MongoDB (Atlas), to name a few.
+
+Senior iOS Engineer at Tabcorp - Full-time Contractor (Nov 2019 - Mar 2020)
+===========================================================================
+I've worked in a team of 4 iOS developers on the Lott app using MVVM, RxSwift, XCTest to write both unit tests and UI tests.
+I've delivered the new Set For Life project and I did some foundation work like refactoring the networking layer of the app.
+Although it was a short time contract, I also had some leadership responsibilities like reporting the development progress at stakeholders meetings, mentoring more junior developers, reviewing code and hiring new developers.
+
+Senior iOS Engineer at Commonwealth Bank (Mar 2017 - Nov 2019)
+==============================================================
+At Commonwealth Bank we were around 20 iOS developers and I've worked in the fintech and partnerships team, along with a jr developer. Since the codebase is so big, each commbank app feature is a standalone framework. I was responsible for delivering the Commbank Rewards Feature and for doing some experimentation and prototyping (Eg. Today extensions, enriched notifications, CoreML, etc).
+They have a strong continuous improving culture, so during my time there I did lots of presentations about various software engineering topics on our weekly guild meetings, attended conferences (WWDC, YOW).
+
+Senior iOS Engineer at UBank (Jul 2016 – Mar 2017)
+==================================================
+During my time at UBank, I've developed features such as the savings graph and started migrating the objective-c code to swift. Most of the code I was writing was still in objective-c, so I felt I wasn't learning much and was invited to come back as a full-time employee at CBA, so I didn't stay long.
+
+Senior iOS Engineer at Odecee (consulting at Commonwealth Bank) (Apr 2015 –Jul 2016)
+====================================================================================
+Allocated at Commonwealth Bank, I've developed the CommBank Property app and some new features for the CommBank app.
+
+Senior/Lead iOS Developer at Nine (Mar 2013 – Apr 2015)
+=======================================================
+I was responsible for taking leadership and making technical decisions about video solutions and the 9Now app architecture. We used functional programming and delivered some interesting projects like the State of Origin Multicam experience.
+
+Lead iOS Developer at Fancied (Feb 2013 – Mar 2013)
+===================================================
+Short contract in between jobs, where I was responsible for setting up this dating app architecture and foundation. A few years later, the founder created a company to teach women how to create their tech startup and I was invited to be one off the mentors.
+
+Lead iOS Developer at Zunos (May 2012 – Feb 2013)
+=================================================
+During my time working for Zunos I was responsible for leading the I development of the iPhone/iPad Zunos app, which is an app to improve performance of sales teams. This app is used by many different business worldwide, I was responsible for creating a way to make its UI fully configured by the backend. This app had to be fully functional offline, so it had to download content, store data in CoreData and sync when network becomes available.
+
+Software Engineer at TigerSpike (Nov 2010 – May 2012)
+=====================================================
+During my time working for tigerspike I developed the following apps:
+- Channel TEN and TEN Sport iPhone app
+- CENTRE BET iPhone app
+- News Digital Media iPad apps (The Australian, Herald Sun, Perth Now, Courier-Mail, Daily Telegraph, The Advertiser)
+
+Software Engineer at Zunos (Jul 2010 – Nov 2010)
+================================================
+When I first joined Zunos, they had a video on demand system to play videos on TVs installed in Subaru dealerships. I was responsible for fixing their video player written in C++ and write an iPhone app to control the playback.
+
+Senior Software Engineer at Globo TV Network (Jul 2004 – May 2010)
+==================================================================
+Software development in C++
+Research new technologies related to audio/video production. Technologies involved:
+STL (String, vectors, algorithms), Boost (threads, socket), MFC / GDI for the GUI, DirectX (3D GUI);
+MXF file processing: Decoding AES audio stream into PCM format, process and encode back to an AES stream);
+MySQL;
+Socket, MSMQ, Sony RS422 Serial Protocol.
+
+R&D Engineer at Telecommunication Studies Centre from Pontificia Universidade Católica of Rio de Janeiro (Jan 2001 – Jul 2004 full time / Jul 2004 – Jan 2007 part time)
+========================================================================================================================================================================
+Research in all-optical-networks simulation, using the open source Network Simulator NS-2 (C++ / TCL)
+Development of network equipment using FPGA's to improve Ethernet QoS which resulted in a patented technology
+Free Space Optics research
+BER measurement and Ethernet traffic analysis (both using optical links)
+
+
+## EDUCATION
+
+Master Degree – Research: Optical Network Simulation at Pontificia Universidade Católica, Rio de Janeiro
+Jan 2003 – Dec 2004
+Dissertation entitled “Performance Analysis of an Optical Switched Manhattan Street Network”
+
+Bachelor Degree in Electrical Engineering at Pontificia Universidade Católica, Rio de Janeiro
+Jan 1997 – Dec 2002
+With double minor in:
+- Telecommunications (Optical Networks)
+- Decision Support Systems (Operational Research, Stochastic Process and Statistics)
+
+
+## OTHER RELEVANT INFORMATION
+
+Awards
+======
+Globo News - Excellence Award Winner 2007, Category Newsroom
+Broadcast Engineering, March 2007.
+
+Publications
+============
+Title: Performance Analysis of an Optical Switched Manhattan Street Network
+Published by: Photonic Network Communications, Vol. 10, No. 3, November 2005
+Authors: B. C. L. Guedes et al.
+
+Title: A New Optical Gigabit Ethernet Network Element
+Published by: Microwave & Optical Technology Letters, Vol. 48, No. 7, July 2006.
+Authors: H.J.P.P. Silva, M.M. Mosso, R.A.A. Lima, B.C.L. Guedes, and A. Podcameni, 
+
+Conferences
+============
+Simulation and Development of a FSO System at an Urban Environment in Rio de Janeiro
+SPIE' 2004 - Annual SPIE International Symposium - Optical Science and Technology, 2004, Denver, Colorado.
+Osório J.A.H., Mosso M.M., Guedes B.C.L., Podcameni A
