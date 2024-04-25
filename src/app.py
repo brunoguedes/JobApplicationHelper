@@ -1,6 +1,5 @@
 import os
 from dotenv import load_dotenv
-load_dotenv()
 
 import streamlit as st
 import html2text
@@ -178,63 +177,66 @@ class App:
             return None
         
     def run(self):
+        st.title('Job Application Helper')
+
         # Read Input Files
         cv_path = './input/candidate_cv.pdf'
         cv_content = self.read_file_content(cv_path)
         cover_letter_path = './input/cover_letter_sample.pdf'
         cover_letter_sample = self.read_file_content(cover_letter_path)
+ 
+        # LLM Picker
+        llms = LLMs()
+        chosen_llm = st.selectbox(
+            "Please select the model you'd like to use:",
+            llms.get_available_llms(),
+            index=0,
+        )
+        llm = llms.get_llm(chosen_llm)
 
         # Input Fields
-        st.title('Job Application Helper')
         url_input = st.text_input('paste the url of the position you are interested here')
         st.subheader('or')
         job_ad_content_input = st.text_area('paste the job ad content here', height=300)
         job_ad_content = self.job_ad_content(url_input = url_input, job_ad_content_input = job_ad_content_input)
-
+        
         if job_ad_content and cv_content is not None and cover_letter_sample is not None:
             try:
-                llms = LLMs()
-                job_requirements_summary = self.summarize(job_ad_content=job_ad_content, llm=llms.claude)
                 with st.expander('Extracted Text'):
                     st.write(job_ad_content)
-
+                job_requirements_summary = self.summarize(job_ad_content=job_ad_content, llm=llm)
                 st.subheader('Job Requirements:')
                 st.write(job_requirements_summary)
-
+                cv_summary = self.generate_cv_summary(
+                    job_requirements_summary=job_requirements_summary,
+                    cv_content=cv_content,
+                    llm=llm
+                )
+                st.subheader('CV Summary:')
+                st.write(cv_summary)
+                
                 st.subheader('Based on the job requirements, add any additional instructions bellow:')
                 candidate_observations = st.text_area('additional instructions', height=300)
-
-                st.subheader('CV Summary:')
-                cv_summary = None
-                if st.button('Generate CV Summary'):
-                    cv_summary = self.generate_cv_summary(
-                        job_requirements_summary=job_requirements_summary,
-                        cv_content=cv_content,
-                        llm=llms.claude
-                    )
-                st.write(cv_summary)
-
-                st.subheader('Cover Letter:')
-                cover_letter = None
+                
                 if st.button('Generate Cover Letter'):
                     cover_letter = self.generate_cover_letter(
                         job_requirements_summary=job_requirements_summary,
                         cv_content=cv_content,
                         cover_letter_sample=cover_letter_sample,
                         candidate_observations=candidate_observations,
-                        llm=llms.claude
+                        llm=llm
                     )
-                st.write(cover_letter)
+                    st.subheader('Cover Letter:')
+                    st.write(cover_letter)
+                    # with st.expander('CV Summary History'): 
+                    #     st.info(cv_summary_memory.buffer)
 
-                # with st.expander('CV Summary History'): 
-                #     st.info(cv_summary_memory.buffer)
-
-                # with st.expander('Cover Letter History'): 
-                #     st.info(cover_letter_memory.buffer)
-
+                    # with st.expander('Cover Letter History'): 
+                    #     st.info(cover_letter_memory.buffer)
             except Exception as e:
                 st.error(f"An error occurred: {str(e)}")
 
 if __name__ == "__main__":
+    load_dotenv()
     app = App()
     app.run()
