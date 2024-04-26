@@ -1,89 +1,93 @@
-# JobApplicationHelper
+# Job Application Helper
 
-JobApplicationHelper is a Python project that helps job applicants create customized CV summaries and cover letters based on the requirements of a specific job position. The project utilizes various libraries and APIs to extract job requirements from a given URL, generate tailored content, and provide an interactive user interface.
+Job Application Helper is a Python-based application that assists job seekers in creating customized cover letters and CV summaries tailored to specific job requirements. The application utilizes various language models and libraries to extract key information from job ads, candidate CVs, and sample cover letters to generate personalized application materials.
 
-## Project Structure
+## Features
 
-The project has the following structure:
+- Extract job requirements from a given job ad URL or pasted content
+- Summarize candidate's CV to highlight relevant skills and education
+- Generate customized cover letters based on job requirements, candidate's CV, and additional observations
+- Support for multiple language models, including Claude3 Opus, GPT-3.5 Turbo, and GPT-4
+- User-friendly web interface built with Streamlit
 
-```
-JobApplicationHelper/
-  .env
-  README.md
-  poetry.lock
-  pyproject.toml
-  input/
-    candidate_cv.txt
-    cover_letter_sample.txt
-  src/
-    app.py
-    llms.py
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/job-application-helper.git
 ```
 
-- `.env`: Contains environment variables for API keys (OpenAI and Anthropic).
-- `README.md`: This file, providing an overview of the project.
-- `poetry.lock` and `pyproject.toml`: Configuration files for the Poetry dependency management tool.
-- `input/`: Directory containing input files.
-  - `candidate_cv.txt`: The candidate's CV content.
-  - `cover_letter_sample.txt`: A sample cover letter.
-- `src/`: Directory containing the project's source code.
-  - `app.py`: The main application file.
-  - `llms.py`: Module for handling language models and APIs.
+2. Install the required dependencies:
 
-## Dependencies
+```bash
+pip install -r requirements.txt
+```
 
-The project relies on the following dependencies:
+3. Set up the necessary environment variables in a `.env` file:
 
-- Python (version 3.10 to 3.13)
-- python-dotenv
-- setuptools
-- decouple
-- openai
-- langchain
-- langchain-community
-- langchain-anthropic
-- playwright
-- html2text
-- beautifulsoup4
-- streamlit
-- langchain-openai
+```
+OPENAI_API_KEY=your_openai_api_key
+ANTHROPIC_API_KEY=your_anthropic_api_key
+IS_LOCAL=true
+```
 
-These dependencies are managed using the Poetry dependency management tool. The specific versions are specified in the `pyproject.toml` file.
+4. Run the application:
+
+```bash
+streamlit run src/app.py
+```
 
 ## Usage
 
-1. Set up the required API keys in the `.env` file:
-   ```
-   OPENAI_API_KEY=''
-   ANTHROPIC_API_KEY=''
-   ```
+1. Open the application in your web browser.
+2. Select the desired language model from the dropdown menu.
+3. Provide the job ad URL or paste the job ad content into the text area.
+4. The application will extract the job requirements and display them.
+5. Review the generated CV summary, which highlights the candidate's relevant skills and education.
+6. Add any additional instructions or observations in the provided text area.
+7. Click the "Generate Cover Letter" button to create a customized cover letter.
+8. Review the generated cover letter and make any necessary adjustments.
 
-2. Install the project dependencies using Poetry:
-   ```
-   poetry install
-   ```
+## Project Structure
 
-3. Run the application:
-   ```
-   poetry run streamlit run src/app.py
-   ```
+```
+├── .env
+├── .env_example
+├── LICENSE
+├── input
+│   ├── candidate_cv.pdf
+│   └── cover_letter_sample.pdf
+├── packages.txt
+├── pyproject.toml
+└── src
+    ├── app.py
+    ├── jobapplicationhelper
+    │   └── __init__.py
+    └── llms.py
+```
 
-4. Access the application through the provided URL in your web browser.
+- `.env`: File containing environment variables (not included in the repository)
+- `.env_example`: Example file showing the structure of the `.env` file
+- `LICENSE`: License file for the project
+- `input/`: Directory containing input files (candidate CV and sample cover letter)
+- `packages.txt`: List of required system packages
+- `pyproject.toml`: Configuration file for the project dependencies
+- `src/app.py`: Main application file
+- `src/jobapplicationhelper/`: Package directory for the application
+- `src/llms.py`: File containing the language model configuration and selection
 
-5. Paste the URL of the job position you are interested in into the text input field.
+## Contributing
 
-6. The application will extract the job requirements from the provided URL, generate a customized CV summary and cover letter based on the candidate's CV and the sample cover letter.
-
-7. The generated content will be displayed on the screen, along with the extracted job requirements and the history of the CV summary and cover letter generation.
-
-## Customization
-
-- You can modify the input files (`candidate_cv.txt` and `cover_letter_sample.txt`) to provide your own CV content and cover letter sample.
-
-- The prompt templates used for generating the CV summary and cover letter can be customized in the `app.py` file.
-
-- Additional language models and APIs can be added or modified in the `llms.py` file.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+- [Langchain](https://github.com/hwchase17/langchain) - Building applications with LLMs through composability
+- [Streamlit](https://streamlit.io/) - The fastest way to build and share data apps
+- [OpenAI](https://openai.com/) - AI research and deployment company
+- [Anthropic](https://www.anthropic.com/) - AI research company

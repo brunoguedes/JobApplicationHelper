@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-from langchain_community.llms import Ollama, OpenAI
+from langchain_community.llms import Ollama
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
 
